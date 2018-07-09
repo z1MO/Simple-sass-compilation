@@ -1,13 +1,13 @@
 {
-  "name": "gulp-build-sass",
+  "name": "Simple-sass-compilation",
   "version": "1.0.0",
-  "description": "Simple gulp-project for compilation sass",
+  "description": "Simple Sass compilation with gulp for folders anywhere",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Artem Kostenko (z1MO_ok)",
-  "license": "ISC",
+  "license": "GPL-3.0",
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
