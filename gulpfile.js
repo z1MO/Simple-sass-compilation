@@ -54,7 +54,7 @@ gulp.task('sass', ['checkenv'], () => {
 });
 
 gulp.task('watch', () => {
-	gulp.watch([env[0] + '/*.sass', env[0] + '/*.scss'], ['cssmin']);
+	gulp.watch([env[0] + '/*.sass', env[0] + '/*.scss'], ['sass']);
 });
 
 gulp.task('default', ['sass']);
