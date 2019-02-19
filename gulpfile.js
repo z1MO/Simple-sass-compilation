@@ -43,12 +43,12 @@ gulp.task('sass', ['checkenv'], () => {
 		.pipe(gulp.dest(env[1]));
 
 	if(env[2] === 'true') {
-		gulp.start('watch');
-
 		return gulp.src(env[1] + '/*.css')
 			.pipe(cssmin())
 			.pipe(gulp.dest(env[1]));
 	}
+
+	gulp.start('watch');
 
 	return true;
 });
