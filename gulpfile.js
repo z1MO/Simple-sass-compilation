@@ -48,8 +48,6 @@ gulp.task('sass', ['checkenv'], () => {
 			.pipe(gulp.dest(env[1]));
 	}
 
-	gulp.start('watch');
-
 	return true;
 });
 
@@ -57,4 +55,4 @@ gulp.task('watch', () => {
 	gulp.watch([env[0] + '/*.sass', env[0] + '/*.scss'], ['sass']);
 });
 
-gulp.task('default', ['sass']);
+gulp.task('default', ['sass', 'watch']);
